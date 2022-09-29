@@ -4,7 +4,12 @@ import pandas as pd
 import time
 
 BACKGROUND_COLOR = "#B1DDC6"
+#-----------------READING CSV FILE ------------------------#
+data = pd.read_csv('data/french_words.csv')
+df = data['English']
+print(df)
 
+#-----------------------------------------------------------#
 window = Tk()
 window.title("Flashy")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
