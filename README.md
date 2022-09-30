@@ -1,0 +1,1 @@
+This is a simple flash card project that flips a card if the user know the meaning of the word
