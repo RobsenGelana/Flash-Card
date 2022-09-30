@@ -1,4 +1,5 @@
 from email.mime import image
+from textwrap import fill
 from tkinter import *
 import pandas as pd
 import random
@@ -17,8 +18,8 @@ def random_word():
 #-----------------------------------------------------------#
 #--------------------FLIP CARD -----------------------------#
 def flip_card():
-   canvas.itemconfig(card_title, text='English')
-   canvas.itemconfig(card_word, text=current_card['English'])
+   canvas.itemconfig(card_title, text='English', fill='white')
+   canvas.itemconfig(card_word, text=current_card['English'], fill='white')
    canvas.itemconfig(card_background, image=card_back_img)
 
 #-----------------------------------------------------------#
